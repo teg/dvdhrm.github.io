@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Rethinking the D-Bus Message Bus
-draft: true
 ---
 
 Later this year, on November 21, 2017, D-Bus will see its
