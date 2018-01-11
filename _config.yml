@@ -19,7 +19,7 @@ footer-links:
   googleplus: +DavidHerrmann # anything in your profile username that comes after plus.google.com/
 
 baseurl: ""
-permalink: /:title/
+permalink: /:year/:month/:day/:title/
 
 kramdown:
   input: GFM
