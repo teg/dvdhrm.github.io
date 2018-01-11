@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Cross-Bootstrap Fedora
+categories: [fedora]
+tags: [fedora, dnf, installroot, bootstrap, qemu, forcearch]
 draft: true
 ---
 

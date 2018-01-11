@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Rethinking the D-Bus Message Bus
+categories: [fedora]
+tags: [dbus, fedora, bus1, dbus-broker, dbus-daemon]
 ---
 
 Later this year, on November 21, 2017, D-Bus will see its
