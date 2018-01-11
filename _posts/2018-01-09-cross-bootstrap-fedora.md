@@ -3,7 +3,6 @@ layout: post
 title: Cross-Bootstrap Fedora
 categories: [fedora]
 tags: [fedora, dnf, installroot, bootstrap, qemu, forcearch]
-draft: true
 ---
 
 I recently had to assemble linux distribution images to be run in containers and
