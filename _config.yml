@@ -1,34 +1,38 @@
-name: Ponyhof
-description: Dysfunctional Programming
-avatar: https://avatars0.githubusercontent.com/u/623857
-url: https://dvdhrm.github.io
+# Site configuration
+title: "dvdhrm"
+name: "Ponyhof"
+description: "Dysfunctional Programming"
+author: "David Rheinsberg"
 
-footer-links:
-  dribbble:
-  email: dh.herrmann@gmail.com
-  facebook:
-  flickr:
-  github: dvdhrm
-  instagram:
-  linkedin:
-  pinterest:
-  rss: rss # just type anything here for a working RSS icon
-  twitter: dvdhrm
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: +DavidHerrmann # anything in your profile username that comes after plus.google.com/
+# Resource configuration
+avatar: "images/dvdhrm.png"
+avatar_border: true
+favicon: "images/dvdhrm.ico"
+url: "https://dvdhrm.github.io"
 
-baseurl: ""
-permalink: /:year/:month/:day/:title/
+# Media handles
+media:
+  email: "david.rheinsberg@gmail.com"
+  github: "dvdhrm"
+  rss: "feed.xml"
+  twitter: "dvdhrm"
 
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+#
+# Remaining Setup
+#
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: "/:year/:month/:day/:title/"
 
 plugins:
   - jekyll-sitemap
-
-exclude:
-  - COPYING
-  - README
-  - CNAME

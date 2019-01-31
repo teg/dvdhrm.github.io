@@ -1,0 +1,43 @@
+  <head>
+    <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property='og:type' content='article' />
+
+{% if page.name %}
+    <title>{{ page.name }}</title>
+    <meta name="title" content="{{ page.name }}" />
+    <meta name="DCTERMS.title" content="{{ page.name }}" />
+    <meta property="og:title" content="{{ page.name }}" />
+{% else %}
+    <title>{{ site.name }} – {{ site.description }}</title>
+    <meta name="title" content="{{ site.name }} – {{ site.description }}" />
+    <meta name="DCTERMS.title" content="{{ site.name }} – {{ site.description }}" />
+    <meta property="og:title" content="{{ site.name }} – {{ site.description }}" />
+{% endif %}
+
+{% if page.excerpt %}
+    <meta name="description" content="{{ page.excerpt | strip_html }}" />
+    <meta name="DCTERMS.description" content="{{ page.excerpt | strip_html }}" />
+    <meta property="og:description" content="{{ page.excerpt | strip_html }}" />
+{% else %}
+    <meta name="description" content="{{ site.description }}">
+    <meta name="DCTERMS.description" content="{{ site.description }}">
+    <meta property="og:description" content="{{ site.description }}" />
+{% endif %}
+
+{% if page.date %}
+    <meta name="date" content="{{ page.date | date_to_xmlschema }}">
+    <meta name="DCTERMS.created" content="{{ page.date | date_to_xmlschema }}">
+    <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+{% endif %}
+
+    <meta name="author" content="{{ site.author }}" />
+    <meta name="DCTERMS.creator" content="{{ site.author }}" />
+    <meta property='article:author' content='{{ site.author }}' />
+
+    <link rel="shortcut icon" href="{{ site.favicon | relative_url }}" />
+    <link rel="stylesheet" type="text/css" href="{{ 'stylesheets/style.css' | relative_url }}" />
+    <link rel="stylesheet" type="text/css" href="{{ 'stylesheets/media-icons.css' | relative_url }}" />
+    <link rel="stylesheet" type="text/css" href="{{ 'stylesheets/syntax.css' | relative_url }}" />
+  </head>

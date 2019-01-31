@@ -1,20 +1,11 @@
 ---
-layout: default
 ---
-
-<div class="posts">
-  {% for post in site.posts %}
-    {% unless post.draft %}
-      <article class="post">
-
-        <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-        <div class="entry">
-          {{ post.excerpt }}
-        </div>
-
-        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-      </article>
-    {% endunless %}
-  {% endfor %}
-</div>
+{% for post in site.posts %}
+<article class="tj">
+  <h1><a href="{{ post.url | relative_url }}">{{ post.name }}</a></h1>
+  <section>
+{{ post.excerpt }}
+  </section>
+  <a href="{{ post.url | relative_url }}">Read More</a>
+</article>
+{% endfor %}
