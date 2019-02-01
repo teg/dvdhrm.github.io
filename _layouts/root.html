@@ -42,5 +42,11 @@
     <footer class="tc pv3 bt bb b--light-silver bg-light-gray">
 {% include media-icons.html %}
     </footer>
+{% if page.math %}
+    <script id="mathimport"
+            src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+            type="text/javascript">
+    </script>
+{% endif %}
   </body>
 </html>
