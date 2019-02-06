@@ -1,6 +1,7 @@
 ---
 ---
-{% for post in site.posts %}
+{% assign posts = site.posts | where_exp: "post", "post.hidden != true" %}
+{% for post in posts %}
 <article class="tj">
   <h1><a href="{{ post.url | relative_url }}">{{ post.name }}</a></h1>
   <section>
